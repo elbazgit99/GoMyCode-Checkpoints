@@ -1,1 +1,0 @@
-GoMyCode second checkpoint
