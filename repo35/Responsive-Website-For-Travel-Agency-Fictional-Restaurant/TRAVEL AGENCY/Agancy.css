@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+     font-family: Arial, sans-serif;
+     background-color: rgb(112, 11, 11);
+     color: white;
+ }
+ 
+ .main-color {
+     color: rgb(255, 255, 255);
+ }
+ 
+ .navbar {
+     background-color: #333333;
+ }
+ 
+ .navbar-brand {
+     color: white;
+ }
+ 
+ .navbar-nav .nav-link {
+     color: white !important;
+ }
+ 
+ /* hero section */
+ .hero {
+     background-size: cover;
+     height: 600px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+ 
+ .hero h1, .hero p {
+     color: white;
+ }
+ 
+ /* Destination Section */
+ #destinations {
+     padding: 50px 0;
+ }
+ 
+ #destinations p {
+     color: black;
+ }
+ 
+ #destinations h2 {
+     font-size: 36px;
+     margin-bottom: 40px;
+     text-align: center;
+ }
+ 
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin-left: -15px;  
+     margin-right: -15px; 
+ }
+ 
+ .col-md-4 {
+     display: flex;
+     justify-content: center;
+     align-items: stretch;
+     flex: 1;
+     margin-bottom: 30px;
+     padding-left: 15px; 
+     padding-right: 15px; 
+ }
+ 
+ .card {
+     width: 100%;
+     border: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100%;
+     background-color: #fff;
+     border-radius: 10px;
+     overflow: hidden;
+ }
+ 
+ .card-img-top {
+     height: 200px;
+     object-fit: cover;
+ }
+ 
+ .card-body {
+     flex-grow: 1;
+     padding: 20px;
+ }
+ 
+ .card-body h5 {
+     color: rgb(255, 255, 255);
+     font-size: 20px;
+ }
+ 
+ .card-body p {
+     color: rgb(200, 200, 200);
+     font-size: 16px;
+ }
+ 
+ .card-body .btn-main {
+     background-color: rgb(112, 11, 11);
+     color: white;
+     border-radius: 5px;
+     padding: 10px 20px;
+     text-transform: uppercase;
+     text-decoration: none;
+     border: none;
+ }
+ 
+ .card-body .btn-main:hover {
+     background-color: white;
+     color: rgb(112, 11, 11);
+ }
+ 
+ /* Footer styles */
+ footer {
+     background-color: #222222;
+     color: white;
+     padding: 10px 0;
+     text-align: center;
+ }
+ 
+ footer a {
+     color: white;
+     margin: 0 10px;
+     font-size: 20px;
+ }
+ 
+ footer a:hover {
+     color: rgb(112, 11, 11);
+ }
+ 
+ /* Button Styles */
+ .btn-main {
+     background-color: #f8f9fa;
+     color: rgb(112, 11, 11);
+     border: 1px solid rgb(112, 11, 11);
+ }
+ 
+ .btn-main:hover {
+     background-color: rgb(112, 11, 11);
+     color: white;
+ }
+ 
+ /* Responsive Mobile */
+ @media (max-width: 768px) {
+     .navbar-nav {
+         display: flex;
+         justify-content: space-around;
+         width: 100%;
+         text-align: center;
+     }
+ 
+     .nav-link {
+         padding: 10px 15px;
+     }
+ 
+     .col-md-4 {
+         flex: 1 0 100%;
+         margin-bottom: 15px;
+         padding-left: 15px; 
+         padding-right: 15px; 
+     }
+ 
+     .row {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         margin-left: 0; 
+         margin-right: 0; 
+     }
+ }
+ 

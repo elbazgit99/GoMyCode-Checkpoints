@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGHARAS - Moroccan Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Agancy.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">AGHARAS</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#destinations">Destinations</a>
+                <a class="nav-link" href="#tours">Tours</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Discover Morocco with AGHARAS</h1>
+            <p>Your adventure awaits. Book your dream vacation today!</p>
+            <a href="#contact" class="btn btn-main btn-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="container py-5">
+        <h2 class="text-center main-color">Explore Our Destinations</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/marrakech.jpeg" class="card-img-top" alt="Marrakech">
+                    <div class="card-body">
+                        <h5 class="card-title">Marrakech</h5>
+                        <p class="card-text">The Red City is known for its vibrant souks, palaces, and gardens.</p>
+                        <a href="#" class="btn btn-main">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/western-sahara.jpg" class="card-img-top" alt="Western Sahara">
+                    <div class="card-body">
+                        <h5 class="card-title">Western Sahara</h5>
+                        <p class="card-text">A unique desert experience with vast sand dunes and striking landscapes.</p>
+                        <a href="#" class="btn btn-main">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/fes.jpg" class="card-img-top" alt="Fes">
+                    <div class="card-body">
+                        <h5 class="card-title">Fes</h5>
+                        <p class="card-text">A city of rich tradition, famous for its medieval medina.</p>
+                        <a href="#" class="btn btn-main">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="container py-5">
+        <h2 class="text-center main-color">Tour Packages</h2>
+        <div class="accordion mt-4" id="tourAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button">
+                        Desert Tour
+                    </button>
+                </h2>
+                <div class="accordion-body">
+                    Experience the beauty of the Sahara Desert with a guided tour. <a href="#">View Details</a>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button">
+                        Atlas Mountain Trekking
+                    </button>
+                </h2>
+                <div class="accordion-body">
+                    Explore the majestic Atlas Mountains on an unforgettable trek. <a href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center main-color">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="destination" class="form-label">Destination of Interest</label>
+                <select class="form-control" id="destination">
+                    <option>Marrakech</option>
+                    <option>Western Sahara</option>
+                    <option>Fes</option>
+                    <option>Tata</option>
+                    <option>Rabat</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-main">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AGHARAS. All rights reserved.</p>
+
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+</body>
+
+</html>
