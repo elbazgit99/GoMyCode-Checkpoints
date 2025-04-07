@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:50px ;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: hsl(202, 86%, 94%);
+    color: hsl(202, 55%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw
+}
+
+
+.Parent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.container-left {
+    width: 50%;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.clearall {
+    font-size: 13px;
+    color: hsl(200, 26%, 54%);
+}
+
+.clearall:hover {
+    color: hsl(202, 55%, 16%);
+}
+
+.Amount {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 12px;
+    color: hsl(200, 26%, 54%);
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.currency,
+.years,
+.percentage {
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+    color: hsl(200, 26%, 54%);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid hsl(200, 26%, 54%);
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: hsl(61, 70%, 52%);
+}
+
+
+.Term-Type {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+
+.Term-Rate {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.Mortgage-Term,
+.Interest-Rate {
+    position: relative;
+    width: 48%;
+}
+
+.Term-Rate .years,
+.Term-Rate .percentage {
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+    color: hsl(200, 26%, 54%);
+}
+
+
+.Type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Type .Typeh1 {
+    margin-bottom: 10px;
+}
+
+.Type div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid hsl(200, 24%, 40%);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.Type div:hover {
+    border-color: hsl(61, 62%, 66%);
+}
+
+.radio {
+    font-size: 14px;
+}
+
+
+.Calculate {
+    padding: 15px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+    font-weight: bold;
+    border-radius: 5rem;
+    font-size: 16px;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+.Calculate:hover {
+    background-color: hsl(61, 62%, 66%);
+}
+
+
+.container-right {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    background-color: hsl(202, 55%, 16%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0 20px 20px 70px;
+}
+
+.Results img {
+    width: 40%;
+    max-width: 250px;
+    margin-top: 20%;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 16px;
+    color: hsl(200, 26%, 54%);
+}
+
+@media (max-width: 800px) {
+    .Parent {
+        flex-direction: column;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+
+    .Results img {
+        width: 60%;
+        margin-top: 10%;
+    }
+
+    .Calculate {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 3vw;
+    }
+
+    .Parent,
+    .container-left,
+    .container-right{
+        border-radius: 0;
+    }
+
+    .Term-Rate {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .Mortgage-Term,
+    .Interest-Rate {
+        width: 48%;
+    }
+
+    .Calculate {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .Results img {
+        width: 70%;
+        max-width: 200px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .Parent,
+    .container-left,
+    .container-right{
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .Parent {
+        flex-direction: column;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+
+    .container-left nav {
+        display: block;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .Type div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .Term-Rate {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Mortgage-Term,
+    .Interest-Rate {
+        width: 100%;
+    }
+}
