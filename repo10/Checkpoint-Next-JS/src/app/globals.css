@@ -1,0 +1,21 @@
+/* src/app/globals.css */
+
+/* These three lines are crucial for Tailwind CSS to work */
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+/* Add any of your own global CSS rules below these lines */
+html, body {
+  font-family: 'Inter', sans-serif; /* Assuming Inter font is loaded in layout.tsx */
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common utility to ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
