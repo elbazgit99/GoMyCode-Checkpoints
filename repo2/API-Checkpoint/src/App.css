@@ -1,0 +1,57 @@
+/* userList/src/App.css */
+
+.app-container {
+  min-height: 100vh; /* Ensures the container takes at least the full viewport height */
+  background-color: #f3f4f6; /* Background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  padding: 40px 16px; /* Padding top/bottom and left/right */
+  color: #374151; /* Default text color within this container */
+}
+
+.app-title {
+  font-size: 3.052rem; /* Large font size for the main title */
+  font-weight: 800; /* Extra bold font weight */
+  color: #1e40af; /* Deep blue color */
+  margin-bottom: 40px; /* Space below the title */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.loading-message {
+  text-align: center;
+  font-size: 1.25rem; /* Medium font size */
+  color: #2563eb; /* Blue color */
+  font-weight: 600; /* Semi-bold font weight */
+  padding: 32px 0; /* Vertical padding */
+}
+
+.error-message {
+  text-align: center;
+  background-color: #fee2e2; /* Light red background */
+  color: #b91c1c; /* Dark red text color */
+  padding: 16px; /* Padding around the message */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ef4444; /* Red border */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  max-width: 500px; /* Maximum width for the error box */
+  margin-left: auto; /* Center the box */
+  margin-right: auto; /* Center the box */
+}
+
+.error-title {
+  font-weight: 600; /* Semi-bold for the error title */
+}
+
+.error-hint {
+  font-size: 0.875rem; /* Smaller text for the hint */
+  margin-top: 8px; /* Space above the hint */
+}
+
+.app-footer {
+  margin-top: 48px; /* Space above the footer */
+  text-align: center;
+  color: #6b7280; /* Gray text color */
+  font-size: 0.875rem; /* Smaller text for the footer */
+}
