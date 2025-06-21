@@ -1,4 +1,4 @@
-#Dear [Instructor's Name],
+#Dear instructor Abderrahim Agra,
 
 #I hope this message finds you well.
 
@@ -20,4 +20,4 @@ Thank you once again for your dedicated guidance and support throughout this tra
 
 Sincerely,
 
-Hamza [Your Last Name]
+Hamza el
