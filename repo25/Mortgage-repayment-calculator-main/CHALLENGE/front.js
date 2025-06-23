@@ -1,7 +1,5 @@
-// front.js - Mortgage Calculator Logic (Compact Version)
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Get references to all necessary DOM elements
+
     const inputs = {
         mortgageAmount: document.getElementById('mortgageAmount'),
         mortgageTerm: document.getElementById('mortgageTerm'),
@@ -26,13 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
         mortgageType: document.getElementById('mortgageTypeError')
     };
 
-    // Resets results display to initial state
+
     const resetResultsDisplay = () => {
         Object.values(resultStates).forEach(div => div.classList.add('hidden'));
         resultStates.initial.classList.remove('hidden');
     };
 
-    // Shows specific error message for an input
+
     const showInputError = (inputElement, errorElement, isInvalid) => {
         if (isInvalid) {
             inputElement.classList.add('border-red-500');
@@ -43,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Validates a single number input
+
     const validateNumberInput = (inputName) => {
         const inputElement = inputs[inputName];
         const isValid = inputElement.value !== '' && !isNaN(parseFloat(inputElement.value)) && parseFloat(inputElement.value) >= 0;
@@ -51,10 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return isValid;
     };
 
-    // Validates if a mortgage type is selected
+
     const validateMortgageType = () => {
         const isSelected = Array.from(radios).some(radio => radio.checked);
-        showInputError(null, errorDisplays.mortgageType, !isSelected); // No input element for radio error
+        showInputError(null, errorDisplays.mortgageType, !isSelected);
         return isSelected;
     };
 
@@ -141,5 +139,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    resetResultsDisplay(); // Initial setup on page load
+    resetResultsDisplay(); 
 });
