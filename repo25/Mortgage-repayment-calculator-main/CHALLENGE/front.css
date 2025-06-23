@@ -5,27 +5,24 @@
 }
 
 body {
-    margin:50px ;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: jakarta, sans-serif;
     background-color: hsl(202, 86%, 94%);
     color: hsl(202, 55%, 16%);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10vw
+    padding: 15vh 10vw; 
 }
 
-
 .Parent {
-    width: 100%;
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     overflow: hidden;
 }
-
 
 .container-left {
     width: 50%;
@@ -34,7 +31,7 @@ body {
 }
 
 h1 {
-    font-size: clamp(14px, 2vw, 20px);
+    font-size: (14px, 2vw, 20px);
 }
 
 nav {
@@ -74,7 +71,6 @@ label {
     position: absolute;
     left: 10px;
     font-size: 14px;
-    color: hsl(200, 26%, 54%);
 }
 
 input[type="number"] {
@@ -91,7 +87,6 @@ input[type="number"]:focus {
     outline: none;
     border-color: hsl(61, 70%, 52%);
 }
-
 
 .Term-Type {
     display: flex;
@@ -156,9 +151,6 @@ input[type="number"]:focus {
 .Calculate {
     padding: 15px;
     width: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: hsl(61, 70%, 52%);
     color: hsl(202, 55%, 16%);
     font-weight: bold;
@@ -166,6 +158,7 @@ input[type="number"]:focus {
     font-size: 16px;
     margin: 20px auto 0;
     cursor: pointer;
+    border: none;
 }
 
 .Calculate:hover {
@@ -200,6 +193,13 @@ p {
 }
 
 @media (max-width: 800px) {
+    .Parent,
+    .container-left,
+    .container-right{
+        border-radius: 0;
+        margin: 0;
+    }
+
     .Parent {
         flex-direction: column;
     }

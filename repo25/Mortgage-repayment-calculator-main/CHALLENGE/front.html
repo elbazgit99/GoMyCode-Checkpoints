@@ -6,7 +6,6 @@
     <title>Frontend Mentor | Mortgage repayment calculator</title>
     <link rel="stylesheet" href="front.css">
     <link rel="shortcut icon" href="../assets/images/favicon-32x32.png" type="image/png">
-    <link rel="stylesheet" href="./Plus_Jakarta_Sans.zip">
 </head>
 <body>
     <div class="Parent">
@@ -20,7 +19,7 @@
                     <label for="k">Mortgage Amount</label> <br>
                     <div class="input-wrapper">
                         <span class="currency">€</span>
-                        <input type="number" name="k" id="A">
+                        <input type="number" name="k" id="Amount">
                     </div>
                 </div> 
 
@@ -28,7 +27,7 @@
                     <div class="Mortgage-Term">
                         <label for="B">Mortgage Term</label> <br>
                         <div class="input-wrapper">
-                            <input type="number" name="" id="B">
+                            <input type="number" name="" id="Term">
                             <span class="years">years</span>
                         </div>
                     </div>
@@ -36,11 +35,11 @@
                     <div class="Interest-Rate">
                         <label for="c">Interest Rate</label> <br>
                         <div class="input-wrapper">
-                            <input type="number" name="" id="C">
+                            <input type="number" name="" id="Rate">
                             <span class="percentage">%</span>
                         </div>
                     </div>
-                </div>
+                </div> <br>
 
                 <div class="Type">
                     <label class="Typeh1" for="type">Mortgage Type</label>
@@ -56,13 +55,13 @@
                     </div>
                 </div>
 
-                <div class="Calculate">
-                    <input type="image" src="/assets/images/icon-calculator.svg" alt="calculator/svg">
-                    <i class="Calculator"></i>
+                <button class="Calculate">
+                    <a type="image" src="/assets/images/icon-calculator.svg" alt="calculator/svg"></a>
                     <box>Calculate Repayments</box>
-                </div>
+                </button>
             </div>
         </section>
+
 
         <section class="container-right">
             <div class="Results">
@@ -74,5 +73,7 @@
             </div>
         </section>
     </div>
+
+    <script src="front.js"></script>
 </body>
 </html>
