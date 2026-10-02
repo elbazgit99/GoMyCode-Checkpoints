@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project 1</title>
+</head>
+<body>
+
+<header>
+    <h1>My Checkpoint Page</h1>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- bookmarks  (local links) -->
+        <ul>
+            <li  id="home"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am passionate about web development and always eager to learn new things!</p>
+    <img src="./images/jadara-Foundation.png" alt="About Me">
+    <!-- Placeholder for adding pictures -->
+</section>
+
+<!-- Work Section -->
+<section id="work">
+    <h2>Work</h2>
+    <p>Here are some projects I've worked on:</p>
+    <ul>
+        <li>Project 1: Git and GitHub Project</li>
+        <li>Project 2: Creat a Portfolio web page using HTML </li>
+        <li>Project 3: Live Coding in Bootcamp </li>
+    </ul>
+    <div>
+        <h3>My live coding at bootcamp </h3>
+        <!-- Adding a video -->
+        <video width="300" height="300" controls>
+            <source src="movie.mp4" type="video/mp4">
+        </video> <br> <br>
+
+        <!-- adding a audio -->
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume">
+    <h2>Resume</h2>
+    <table border="">
+        <tr>
+            <th>Skill</th>
+            <th>Teacher Report</th>
+        </tr>
+        <tr>
+            <td>Git & GitHub</td>
+            <td>keep it up</td>
+        </tr>
+        <tr>
+            <td>Html</td>
+            <td>Excellent</td>
+        </tr>
+        <tr>
+            <td>Soft Skills</td>
+            <td>10/10</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    <p>&copy; 2025 HTML Project 1. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
