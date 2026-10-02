@@ -1,0 +1,104 @@
+/* styling Card */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 200vw;
+  background: linear-gradient(1135deg, #f0f2f5 0%, #e0e4e8 100% );
+  font-family:'Segoe UI', 'Roboto', sans-serif ;
+  padding: 0 10rem;
+  box-sizing: border-box;
+}
+.product-card:hover{
+  transform : translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.product-image {
+  height: 220px; 
+  object-fit: cover; 
+  border-bottom: 1px solid #eee; 
+}
+
+.card-body {
+  padding: 25px; 
+  text-align: center; 
+}
+
+.product-name {
+  color: #333;
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  font-weight: 700; 
+}
+
+.product-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  color: #007bff; 
+  font-size: 1.6rem;
+  font-weight: 800; 
+  margin-bottom: 0;
+}
+
+/* Greeting Section Styling */
+.greeting-section {
+  margin-top: 40px;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  max-width: 90%; 
+  text-align: center;
+}
+
+.greeting-text {
+  font-size: 1.6rem;
+  color: #28a745; 
+  font-weight: 600;
+  margin: 0;
+}
+
+.greeting-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 4px solid #28a745;
+  box-shadow: 0 0 0 5px rgba(40, 167, 69, 0.2); 
+}
+
+/*  to make the page more Responsive */
+@media (max-width: 768px) {
+  .product-card {
+    width: 90% !important; 
+  }
+
+  .product-name {
+    font-size: 1.5rem;
+  }
+
+  .product-price {
+    font-size: 1.4rem;
+  }
+
+  .greeting-text {
+    font-size: 1.3rem;
+  }
+
+  .greeting-image {
+    width: 100px;
+    height: 100px;
+  }
+}
