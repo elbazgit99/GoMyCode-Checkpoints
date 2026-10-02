@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - My Web App</title>
+        <link rel="stylesheet" href="/style.css"> <!-- Links to your CSS file -->
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/services">Our Services</a>
+            <a href="/contact">Contact Us</a>
+        </nav>
+        <div class="content">
+            <h1>Welcome to Our Home Page!</h1>
+            <p>This is the main page of our web application. Explore our services or get in touch with us.</p>
+            <p>Current time: <span id="currentTime"></span></p>
+        </div>
+        <script>
+            // Optional: Displays the current local date and time
+            document.getElementById('currentTime').innerText = new Date().toLocaleString();
+        </script>
+    </body>
+    </html>
+    

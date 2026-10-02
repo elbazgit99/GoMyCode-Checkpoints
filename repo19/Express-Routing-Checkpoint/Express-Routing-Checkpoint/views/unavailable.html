@@ -1,0 +1,23 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unavailable - My Web App</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="unavailable-container">
+            <h1>Application Unavailable</h1>
+            <p>Our web application is only available during working hours:</p>
+            <p><strong>Monday to Friday, from 9:00 AM to 5:00 PM.</strong></p>
+            <p>Please visit us during these hours. Thank you for your understanding.</p>
+            <p>Current time: <span id="currentDateTime"></span></p>
+        </div>
+        <script>
+            // Displays the current local date and time on the unavailable page
+            document.getElementById('currentDateTime').innerText = new Date().toLocaleString();
+        </script>
+    </body>
+    </html>
+    
