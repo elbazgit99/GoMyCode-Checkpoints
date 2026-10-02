@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+    <link rel="stylesheet" href="front.css">
+    <link rel="shortcut icon" href="../assets/images/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <div class="Parent">
+        <section class="container-left">            
+            <nav class="nav">
+                <h1>Mortgage Calculator</h1>
+                <a class="clearall" href="http://">ClearAll</a>
+            </nav>
+            <div>
+                <div class="Amount">
+                    <label for="k">Mortgage Amount</label> <br>
+                    <div class="input-wrapper">
+                        <span class="currency">€</span>
+                        <input type="number" name="k" id="Amount">
+                    </div>
+                </div> 
+
+                <div class="Term-Rate">
+                    <div class="Mortgage-Term">
+                        <label for="B">Mortgage Term</label> <br>
+                        <div class="input-wrapper">
+                            <input type="number" name="" id="Term">
+                            <span class="years">years</span>
+                        </div>
+                    </div>
+
+                    <div class="Interest-Rate">
+                        <label for="c">Interest Rate</label> <br>
+                        <div class="input-wrapper">
+                            <input type="number" name="" id="Rate">
+                            <span class="percentage">%</span>
+                        </div>
+                    </div>
+                </div> <br>
+
+                <div class="Type">
+                    <label class="Typeh1" for="type">Mortgage Type</label>
+
+                    <div class="Repayment">
+                        <input type="radio" name="type" id="repayment">
+                        <label class="radio" for="repayment">Repayment</label>
+                    </div> 
+
+                    <div class="Interest">
+                        <input type="radio" name="type" id="interest">
+                        <label class="radio" for="interest">Interest Only</label>
+                    </div>
+                </div>
+
+                <button class="Calculate">
+                    <a type="image" src="/assets/images/icon-calculator.svg" alt="calculator/svg"></a>
+                    <box>Calculate Repayments</box>
+                </button>
+            </div>
+        </section>
+
+
+        <section class="container-right">
+            <div class="Results">
+                <img src="../assets/images/illustration-empty.svg" alt="">
+                <h2>Results shown here</h2>
+                <p>Complete the form and click “calculate repayments” to see what 
+                    your monthly repayments would be.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="front.js"></script>
+</body>
+</html>
