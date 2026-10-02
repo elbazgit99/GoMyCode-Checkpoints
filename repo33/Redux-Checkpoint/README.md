@@ -1,0 +1,1 @@
+#In this checkpoint, we are going to use what we have learned previously to create a ToDo Application while using Redux to manage the global state.
