@@ -1,0 +1,86 @@
+/* userList/src/UserList.css */
+
+.user-list-grid {
+  display: grid;
+  /* Responsive grid columns: 1 column by default, then 2, then 3 */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px; /* Space between grid items */
+  padding: 16px; /* Padding around the grid */
+  max-width: 1200px; /* Max width for the grid to keep content readable */
+  width: 100%; /* Ensures it takes full width up to max-width */
+}
+
+.user-card {
+  background-color: #ffffff; /* White background for each card */
+  padding: 24px; /* Padding inside the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Shadow for depth */
+  border: 1px solid #e5e7eb; /* Light gray border */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.user-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Larger shadow on hover */
+}
+
+.user-name {
+  font-size: 1.25rem; /* Medium-large font size */
+  font-weight: 700; /* Bold font weight */
+  color: #1d4ed8; /* Dark blue color */
+  margin-bottom: 8px; /* Space below the name */
+}
+
+.user-detail {
+  color: #374151; /* Dark gray text color */
+  margin-bottom: 4px; /* Small space between details */
+  font-size: 1rem; /* Base font size for details */
+}
+
+.user-label {
+  font-weight: 600; /* Semi-bold for labels */
+}
+
+.user-website-link {
+  color: #3b82f6; /* Blue link color */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.user-website-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.user-address-section {
+  margin-top: 16px; /* Space above address section */
+  padding-top: 16px; /* Padding inside address section */
+  border-top: 1px solid #e5e7eb; /* Top border to separate from other details */
+}
+
+.user-label-address {
+  color: #1f2937; /* Darker gray for address label */
+  font-weight: 600; /* Semi-bold for address label */
+  margin-bottom: 4px; /* Space below address label */
+}
+
+.user-address-detail {
+  font-size: 0.875rem; /* Smaller text for address details */
+  color: #4b5563; /* Medium gray for address details */
+}
+
+.no-users-message {
+  text-align: center;
+  padding: 32px;
+  color: #6b7280;
+}
+
+/* Media Queries for responsive behavior */
+@media (min-width: 768px) { /* On screens 768px wide and up (e.g., tablets) */
+  .user-list-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (min-width: 1024px) { /* On screens 1024px wide and up (e.g., desktops) */
+  .user-list-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}

@@ -1,0 +1,13 @@
+/* userList/src/index.css */
+
+/* Global styles for the body and base elements */
+body {
+  font-family: 'Inter', sans-serif; /* Uses the font imported in index.html */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+  background-color: #f3f4f6; /* Light gray background for the entire page */
+  color: #374151; /* Default dark gray text color */
+}
+
+/* You can add more global reset or base styles here if needed */
